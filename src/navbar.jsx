@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <div className="flex items-center justify-center text-white">
-            <nav className={`flex items-center justify-between fixed z-10 left-1/2 w-[70%] -translate-x-1/2 bg-gray-800/95 py-4 px-10 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 ease-out ${isScrolled ? 'top-0' : 'top-5'}`}>
+            <nav className={`flex items-center justify-between fixed z-10 left-1/2 w-[80%] -translate-x-1/2 bg-gray-800/95 py-4 px-10 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 ease-out ${isScrolled ? 'top-0' : 'top-5'}`}>
                 <div className="navbar-logo">
                     <h1 className='text-2xl text-amber-600 font-extrabold'>My Portfolio</h1>
                 </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div>
-                    <button className="bg-amber-500 text-white px-4 py-2 rounded-full hover:bg-amber-600 transition duration-300">Get in Touch</button>
+                    <button className="bg-amber-500/20 border border-amber-500 text-white px-4 py-2 rounded-full hover:bg-amber-600 transition duration-300">Get in Touch</button>
                 </div>
             </nav>
         </div>
