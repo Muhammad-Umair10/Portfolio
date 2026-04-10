@@ -1,6 +1,11 @@
 import React from "react";
 import laravelImg from './assets/laravel.svg';
-
+import php from './assets/php.png'
+import tailwindcss from "./assets/tailwindcss.png";
+import mysql from './assets/mysql.png'
+import js from './assets/js.png'
+import git from './assets/git.png'
+import reactjs from './assets/react-js.png'
 const skillsData = [
   {
     id: 1,
@@ -12,28 +17,53 @@ const skillsData = [
     id: 2,
     name: 'React',
     description: 'JavaScript Front-End Library',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
+    img: reactjs
   },
   {
     id: 3,
     name: 'Tailwind CSS',
     description: 'Utility-First CSS Framework',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg'
+    img: tailwindcss
+  },
+  {
+    id: 4,
+    name: 'PHP',
+    description: 'Server-Side Scripting Language',
+    img: php
+  },
+  {
+    id: 5,
+    name: 'JavaScript',
+    description: 'Programming Language for Web Development',
+    img: js
+  },
+  {
+    id: 6,
+    name: 'MySQL',
+    description: 'Relational Database Management System',
+    img: mysql
+  },
+  {
+    id: 7,
+    name: 'Git',
+    description: 'Version Control System',
+    img: git
   }
+
 ];
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10">
+    <div className="flex pt-20 flex-col items-center justify-center mb-20 w-full text-white gap-10">
         <div>
             <h2 className="text-3xl font-bold text-amber-500">My Skills</h2>
         </div>
         
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pb-20 w-full">
+    <div className="justify-items-center grid lg:grid-cols-4 md:grid-cols-4 gap-5 pb-20 w-full">
       {skillsData.map((skill) => (
         <div
           key={skill.id}
-          className="bg-amber-500/20 hover:bg-amber-500/80 group  w-full max-w-sm p-6 border border-amber-500 rounded-2xl shadow"
+          className="bg-amber-500/20 shadow-md transition-all duration-300 shadow-amber-500/60 hover:bg-amber-500/80 group  w-full max-w-sm p-6 border border-amber-500 rounded-2xl shadow"
         >
           <img
             className="mb-3"
