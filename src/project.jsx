@@ -9,7 +9,6 @@ const projectsData = [
         title: 'Ethcial RCM',
         img: projectimg,
         description: 'Medical Billing Services',
-        img: projectimg,
         technologies: ['Html', 'Css', 'Wordpress', 'PHP', 'Elementor'],
         link: 'https://ethicalrcmservices.com/'
     },
@@ -61,7 +60,7 @@ const Project = () => {
                                         </span>
                                     ))}
                                 </div>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-300 underline bg-amber-500/20 hover:bg-amber-500 hover:text-white border border-amber-500 px-4 py-2 rounded-full transition duration-300">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-amber-500  underline bg-amber-500/20 hover:bg-amber-500 hover:text-white border border-amber-500 px-4 py-2 rounded-full transition duration-300">
                                     Visit Project
                                 </a>
                             </div>

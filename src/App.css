@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+.skill-swiper .swiper-button-next,
+.skill-swiper .swiper-button-prev {
+    background-color: #2a2a2aba;
+    color: #f59e0b;
+    /* amber-500 */
+    transform: scale(0.7);
+    border-radius: 50%;
+    padding: 10px;
+}
+.skill-swiper .swiper-button-next,
+.skill-swiper .swiper-button-prev{
+    transition: background-color 0.3s, color 0.3s;
+    background-color: black;
+}
+.skill-swiper .swiper-button-disabled {
+    opacity: 0.3;
+}
