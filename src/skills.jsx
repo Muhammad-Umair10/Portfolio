@@ -62,7 +62,7 @@ const Skills = () => {
   return (
     <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10">
       <div>
-        <h2 className="text-3xl font-bold text-amber-500">My Skills</h2>
+        <h2 className="text-3xl font-bold text-white">Technical Expertise</h2>
       </div>
 
       {/* 2. Add modules={[Navigation]} and navigation={true} */}
