@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 5rem;
+}
+
+#home,
+#services,
+#about,
+#projects,
+#contact {
+  scroll-margin-top: 2rem;
+}

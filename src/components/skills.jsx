@@ -4,13 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import laravelImg from './assets/laravel.svg';
-import php from './assets/php.png'
-import tailwindcss from "./assets/tailwindcss.png";
-import mysql from './assets/mysql.png'
-import js from './assets/js.png'
-import git from './assets/git.png'
-import reactjs from './assets/react-js.png'
+import laravelImg from '../assets/laravel.svg';
+import php from '../assets/php.png'
+import tailwindcss from "../assets/tailwindcss.png";
+import mysql from '../assets/mysql.png'
+import js from '../assets/js.png'
+import git from '../assets/git.png'
+import reactjs from '../assets/react-js.png'
+import { motion } from 'framer-motion';
 
 const skillsData = [
   {
@@ -60,24 +61,36 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10">
-      <div>
+    <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10 mt-20">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
         <h2 className="text-3xl font-bold text-white">Technical Expertise</h2>
-      </div>
+      </motion.div>
 
       {/* 2. Add modules={[Navigation]} and navigation={true} */}
-      <Swiper
-        modules={[Navigation]}
-        navigation={true}
-        spaceBetween={5}
-        slidesPerView={1}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 3 },
-        }}
-        className="pb-20 w-full skill-swiper"
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="pb-20 w-full"
       >
+        <Swiper
+          modules={[Navigation]}
+          navigation={true}
+          spaceBetween={5}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="w-full skill-swiper"
+        >
         {skillsData.map((skill) => (
           <SwiperSlide key={skill.id} className="flex h-full px-2">
             {/* 1. Use 'h-full' and 'flex-1' on the inner wrapper */}
@@ -100,7 +113,8 @@ const Skills = () => {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+        </Swiper>
+      </motion.div>
 
       {/* 3. Custom CSS to color the arrows amber (Add this to your CSS file) */}
 

@@ -1,8 +1,10 @@
 import React from "react";
-import projectimg from './assets/project.png'
-import projectimg2 from './assets/pcguys.png'
-import projectimg3 from './assets/bilalhome.png'
-import projectimg4 from './assets/nobelhealth.png'
+import projectimg from '../assets/project.png'
+import projectimg2 from '../assets/pcguys.png'
+import projectimg3 from '../assets/bilalhome.png'
+import projectimg4 from '../assets/nobelhealth.png'
+import { motion } from 'framer-motion';
+
 const projectsData = [
     {
         id: 1,
@@ -40,15 +42,27 @@ const projectsData = [
 
 const Project = () => {
     return (
-        <section className="py-16 bg-gray-900 text-white">
+        <section id="projects" className="py-16 lg:py-0 bg-gray-900 text-white">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                <h2 className="text-2xl lg:text-3xl text-center font-bold mb-8 text-amber-500">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    className="text-2xl lg:text-3xl text-center font-bold mb-8 text-amber-500">
                     <span className="text-white">My</span> Projects
-                </h2>
+                </motion.h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {projectsData.map((project) => (
-                        <div key={project.id} className="bg-gray-800/95 rounded-3xl overflow-hidden shadow-xl">
+                    {projectsData.map((project, index) => (
+                        <motion.div 
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: index * 0.2 }}
+                            key={project.id} 
+                            className="bg-gray-800/95 rounded-3xl overflow-hidden shadow-xl"
+                        >
                             <img src={project.img} alt={project.title} className="w-full h-48" />
                             <div className="p-6">
                                 <h3 className="text-xl font-semibold mb-2 text-amber-500">{project.title}</h3>
@@ -64,7 +78,7 @@ const Project = () => {
                                     Visit Project
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
