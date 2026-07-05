@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/Portfolio/assets/main.js",
+  "homepage": "/Portfolio/assets/main.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
