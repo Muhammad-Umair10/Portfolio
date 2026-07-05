@@ -59,7 +59,7 @@ const skillsData = [
 
 ];
 
-const Skills = () => {
+const skills = () => {
   return (
     <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10 mt-20">
       <motion.div
@@ -91,28 +91,28 @@ const Skills = () => {
           }}
           className="w-full skill-swiper"
         >
-        {skillsData.map((skill) => (
-          <SwiperSlide key={skill.id} className="flex h-full px-2">
-            {/* 1. Use 'h-full' and 'flex-1' on the inner wrapper */}
-            <div className="w-full h-full flex flex-col">
-              <div
-                className="bg-amber-500/20 shadow-md transition-all duration-300 shadow-amber-500/60 hover:bg-amber-500/80 group p-6 border border-amber-500 rounded-2xl flex flex-col items-center text-center h-full flex-1"
-              >
-                <img
-                  className="mb-3 object-contain"
-                  height={50}
-                  width={50}
-                  src={skill.img}
-                  alt={skill.name}
-                />
-                <h5 className="mb-2 text-2xl group-hover:text-white font-semibold text-amber-500">
-                  {skill.name}
-                </h5>
-                <p className="text-white text-sm ">{skill.description}</p>
+          {skillsData.map((skill) => (
+            <SwiperSlide key={skill.id} className="flex h-full px-2">
+              {/* 1. Use 'h-full' and 'flex-1' on the inner wrapper */}
+              <div className="w-full h-full flex flex-col">
+                <div
+                  className="bg-amber-500/20 shadow-md transition-all duration-300 shadow-amber-500/60 hover:bg-amber-500/80 group p-6 border border-amber-500 rounded-2xl flex flex-col items-center text-center h-full flex-1"
+                >
+                  <img
+                    className="mb-3 object-contain"
+                    height={50}
+                    width={50}
+                    src={skill.img}
+                    alt={skill.name}
+                  />
+                  <h5 className="mb-2 text-2xl group-hover:text-white font-semibold text-amber-500">
+                    {skill.name}
+                  </h5>
+                  <p className="text-white text-sm ">{skill.description}</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
         </Swiper>
       </motion.div>
 
@@ -123,4 +123,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default skills;

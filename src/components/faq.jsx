@@ -6,7 +6,7 @@ import { FiExternalLink, FiChevronDown, FiArrowUp } from 'react-icons/fi';
 
 import { motion } from 'framer-motion';
 
-const Faq = () => {
+const faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFaq = (index) => {
@@ -40,7 +40,7 @@ const Faq = () => {
     <div className="min-h-screen text-white flex flex-col justify-center px-6 md:px-16 lg:px-32 relative overflow-hidden font-sans">
 
       <div className="w-full py-20 relative">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -49,7 +49,7 @@ const Faq = () => {
           FAQs (Frequently Asked Questions)
         </motion.h1>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -58,7 +58,7 @@ const Faq = () => {
           Have questions about my web development services? Here are answers to some of the most common questions about website design, development, maintenance, and how the overall project process works.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -95,4 +95,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default faq;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiArrowUp } from 'react-icons/fi';
 
-const ScrollToTop = () => {
+const scrollToTop = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -11,7 +11,7 @@ const ScrollToTop = () => {
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrolled = (winScroll / height) * 100;
-      
+
       setScrollProgress(scrolled);
 
       // Show button after scrolling down 300px
@@ -40,7 +40,7 @@ const ScrollToTop = () => {
   const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
-    <div 
+    <div
       className={`fixed bottom-8 right-8 z-50 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
       onClick={scrollToTop}
     >
@@ -85,4 +85,4 @@ const ScrollToTop = () => {
   );
 };
 
-export default ScrollToTop;
+export default scrollToTop;

@@ -40,11 +40,11 @@ const projectsData = [
     }
 ]
 
-const Project = () => {
+const project = () => {
     return (
         <section id="projects" className="py-16 lg:py-0 bg-gray-900 text-white">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                <motion.h2 
+                <motion.h2
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -55,12 +55,12 @@ const Project = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {projectsData.map((project, index) => (
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: index * 0.2 }}
-                            key={project.id} 
+                            key={project.id}
                             className="bg-gray-800/95 rounded-3xl overflow-hidden shadow-xl"
                         >
                             <img src={project.img} alt={project.title} className="w-full h-48" />
@@ -86,4 +86,4 @@ const Project = () => {
     )
 }
 
-export default Project;
+export default project;
