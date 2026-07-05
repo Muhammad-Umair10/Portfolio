@@ -38,7 +38,7 @@ const projectsData = [
         img: projectimg4,
         technologies: ['Wordpress', 'Elementor', 'CSS', 'Yoast SEO'],
         link: 'https://nobelhealthcarercm.com/'
-    }
+    },
     {
         id: 5,
         title: 'Ndis Solutions',
