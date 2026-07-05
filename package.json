@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Muhammad-Umair10.github.io/Portfolio",
+  "homepage": "https://portfolio-nu-gray-48.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
