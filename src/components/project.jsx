@@ -3,6 +3,7 @@ import projectimg from '../assets/project.png'
 import projectimg2 from '../assets/pcguys.png'
 import projectimg3 from '../assets/bilalhome.png'
 import projectimg4 from '../assets/nobelhealth.png'
+import projectimg5 from '../assets/ndis.webp'
 import { motion } from 'framer-motion';
 
 const projectsData = [
@@ -32,12 +33,21 @@ const projectsData = [
     },
     {
         id: 4,
-        title: 'Project Title',
-        description: 'Project Description',
+        title: 'Nobel Health Care RCM',
+        description: 'Health Care Services',
         img: projectimg4,
         technologies: ['Wordpress', 'Elementor', 'CSS', 'Yoast SEO'],
         link: 'https://nobelhealthcarercm.com/'
     }
+    {
+        id: 5,
+        title: 'Ndis Solutions',
+        description: 'Client and Care Management',
+        img: projectimg5,
+        technologies: ['Wordpress', 'Elementor', 'CSS', 'Yoast SEO'],
+        link: 'https://ndis-solutions.com/'
+    }
+
 ]
 
 const Project = () => {
