@@ -40,7 +40,7 @@ const projectsData = [
     }
 ]
 
-const project = () => {
+const Project = () => {
     return (
         <section id="projects" className="py-16 lg:py-0 bg-gray-900 text-white">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -86,4 +86,4 @@ const project = () => {
     )
 }
 
-export default project;
+export default Project;

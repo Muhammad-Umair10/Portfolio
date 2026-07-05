@@ -3,7 +3,7 @@ import developerImg from '../assets/get-in-touch.png';
 import { motion } from 'framer-motion';
 
 
-const contact = () => {
+const Contact = () => {
   return (
     <div id="contact" className="w-full py-10 px-5 lg:py-0 bg-gray-900 text-white font-sans flex flex-col items-center justify-center">
 
@@ -109,4 +109,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

@@ -6,7 +6,7 @@ import { FiExternalLink, FiChevronDown, FiArrowUp } from 'react-icons/fi';
 
 import { motion } from 'framer-motion';
 
-const faq = () => {
+const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFaq = (index) => {
@@ -95,4 +95,4 @@ const faq = () => {
   );
 };
 
-export default faq;
+export default Faq;

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const neonCursor = () => {
+const NeonCursor = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -166,4 +166,4 @@ const neonCursor = () => {
   );
 };
 
-export default neonCursor;
+export default NeonCursor;

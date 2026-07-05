@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiArrowUp } from 'react-icons/fi';
 
-const scrollToTop = () => {
+const ScrollToTop = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -85,4 +85,4 @@ const scrollToTop = () => {
   );
 };
 
-export default scrollToTop;
+export default ScrollToTop;

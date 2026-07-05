@@ -26,7 +26,7 @@ const skillsData = [
 
 ];
 
-const services = () => {
+const Services = () => {
   return (
     <div id="services" className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10">
       <motion.div
@@ -72,4 +72,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;

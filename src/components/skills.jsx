@@ -59,7 +59,7 @@ const skillsData = [
 
 ];
 
-const skills = () => {
+const Skills = () => {
   return (
     <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10 mt-20">
       <motion.div
@@ -123,4 +123,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;

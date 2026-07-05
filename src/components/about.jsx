@@ -18,7 +18,7 @@ const professional = [
     }
 ]
 
-const about = () => {
+const About = () => {
     return (
         <div id="about" className="flex flex-col gap-5 lg:flex-row items-start justify-between  w-full bg-gray-900 text-white">
 
@@ -48,4 +48,4 @@ const about = () => {
         </div>
     );
 }
-export default about;
+export default About;
