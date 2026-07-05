@@ -1,21 +1,21 @@
 import './App.css'
-import Home from './home.jsx'
-import Navbar from './navbar.jsx'
-import Faq from './components/faq.jsx'
-import Contact from './components/contact.jsx'
-import ScrollToTop from './components/scrollToTop.jsx'
-import NeonCursor from './components/neonCursor.jsx'
+import home from './home.jsx'
+import navbar from './navbar.jsx'
+import faq from './components/faq.jsx'
+import contact from './components/contact.jsx'
+import scrolltotop from './components/scrollToTop.jsx'
+import neonCursor from './components/neonCursor.jsx'
 
 function App() {
 
   return (
     <>
-      <NeonCursor />
-      <Navbar />
-      <Home />
-      <Faq />
-      <Contact />
-      <ScrollToTop />
+      <neonCursor />
+      <navbar />
+      <home />
+      <faq />
+      <contact />
+      <scrolltotop />
     </>
   )
 }
