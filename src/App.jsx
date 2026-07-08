@@ -10,11 +10,9 @@ function App() {
 
   return (
     <>
-      <NeonCursor />
+      <NeonCursor className="hidden lg:block" />
       <Navbar />
       <Home />
-      <Faq />
-      <Contact />
       <ScrollToTop />
     </>
   )

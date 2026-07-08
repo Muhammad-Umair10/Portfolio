@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full py-10 px-5 lg:py-0 bg-gray-900 text-white font-sans flex flex-col items-center justify-center">
+    <div id="contact" className="w-full lg:py-0 bg-gray-900 text-white font-sans flex flex-col items-center justify-center">
 
       {/* Header */}
-      <div className="mb-12 text-center">
+      <div className="mb-8 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold mb-3 tracking-tight">
           Get In <span className="text-amber-500">Touch</span>
         </h2>

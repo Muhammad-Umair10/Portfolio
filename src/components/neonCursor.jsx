@@ -162,6 +162,7 @@ const NeonCursor = () => {
         pointerEvents: 'none',
         zIndex: 9999,
       }}
+      className="hidden lg:block"
     />
   );
 };

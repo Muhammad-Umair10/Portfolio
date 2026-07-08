@@ -61,7 +61,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center mb-20 w-full text-white gap-10 mt-20">
+    <div className="flex flex-col items-center justify-center  text-white gap-10 mt-20">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="pb-20 w-full"
+        className="lg:pb-20 w-full"
       >
         <Swiper
           modules={[Navigation]}

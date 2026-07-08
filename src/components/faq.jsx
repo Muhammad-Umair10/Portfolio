@@ -37,9 +37,9 @@ const Faq = () => {
   ];
 
   return (
-    <div className="min-h-screen text-white flex flex-col justify-center px-6 md:px-16 lg:px-32 relative overflow-hidden font-sans">
+    <div className="mt-20 text-white flex flex-col justify-center">
 
-      <div className="w-full py-20 relative">
+      <div>
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

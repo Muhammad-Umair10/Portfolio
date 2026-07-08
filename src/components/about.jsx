@@ -20,7 +20,7 @@ const professional = [
 
 const About = () => {
     return (
-        <div id="about" className="flex flex-col gap-5 lg:flex-row items-start justify-between  w-full bg-gray-900 text-white">
+        <div id="about" className="flex gap-10 flex-col lg:gap-5 lg:flex-row items-start justify-between bg-gray-900 mt-15 text-white">
 
             <motion.div 
                 initial={{ opacity: 0, y: 40 }}
