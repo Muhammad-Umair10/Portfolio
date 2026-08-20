@@ -61,7 +61,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className="max-w-7xl flex flex-col items-center justify-center text-white gap-10">
+    <div className="lg:max-w-7xl w-full flex flex-col items-center justify-center  text-white gap-5 lg:mb-0 mb-10 lg:gap-10 ">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -82,21 +82,23 @@ const Skills = () => {
         <Swiper
           modules={[Navigation]}
           navigation={true}
-          spaceBetween={5}
+          spaceBetween={3}
           slidesPerView={1}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 3 },
+            390: { slidesPerView: 1 },
+            640: { slidesPerView: 3 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 5 },
+            1900: { slidesPerView: 6 }
           }}
           className="w-full skill-swiper"
         >
           {skillsData.map((skill) => (
-            <SwiperSlide key={skill.id} className="flex h-full px-2">
+            <SwiperSlide key={skill.id} className="flex py-6 h-full justify-center items-center">
               {/* 1. Use 'h-full' and 'flex-1' on the inner wrapper */}
-              <div className="w-full h-full flex flex-col">
+              <div className="w-full lg:w-[210px] h-full flex flex-col">
                 <div
-                  className="bg-amber-500/20 shadow-md transition-all duration-300 shadow-amber-500/60 hover:bg-amber-500/80 group p-6 border border-amber-500 rounded-2xl flex flex-col items-center text-center h-full flex-1"
+                  className="bg-amber-500/20 shadow-md transition-all duration-300 shadow-amber-500/60 hover:bg-amber-500/80 group p-6 border border-amber-500 rounded-xl flex flex-col items-center text-center h-full flex-1"
                 >
                   <img
                     className="mb-3 object-contain"
@@ -105,10 +107,9 @@ const Skills = () => {
                     src={skill.img}
                     alt={skill.name}
                   />
-                  <h5 className="mb-2 text-2xl group-hover:text-white font-semibold text-amber-500">
+                  <h2 className="mb-2 text-2xl group-hover:text-white font-semibold text-amber-500">
                     {skill.name}
-                  </h5>
-                  <p className="text-white text-sm ">{skill.description}</p>
+                  </h2>
                 </div>
               </div>
             </SwiperSlide>

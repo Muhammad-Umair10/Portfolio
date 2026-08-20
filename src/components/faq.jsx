@@ -37,7 +37,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="max-w-7xl  text-white flex flex-col justify-center">
+    <div className="max-w-7xl text-white flex flex-col justify-center">
 
       <div>
         <motion.h1

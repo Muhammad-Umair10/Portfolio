@@ -17,14 +17,6 @@ const projectsData = [
     },
     {
         id: 2,
-        title: 'PC Guys',
-        description: 'Pc Store and Custom Builds',
-        img: projectimg2,
-        technologies: ['Wordpress', 'Elementor', 'PHP', 'Html', 'CSS', 'WooCommerce'],
-        link: 'https://pcguyspk.com/'
-    },
-    {
-        id: 3,
         title: 'Bilal Homeopathic Clinic',
         description: 'Clinic Information',
         img: projectimg3,
@@ -32,7 +24,7 @@ const projectsData = [
         link: 'https://www.bilalhomoeopathicclanic.com/?i=1'
     },
     {
-        id: 4,
+        id: 3,
         title: 'Nobel Health Care RCM',
         description: 'Health Care Services',
         img: projectimg4,
@@ -40,7 +32,7 @@ const projectsData = [
         link: 'https://nobelhealthcarercm.com/'
     },
     {
-        id: 5,
+        id: 4,
         title: 'Ndis Solutions',
         description: 'Client and Care Management',
         img: projectimg5,

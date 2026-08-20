@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <div className=" flex items-center justify-center text-white">
-            <nav className={`max-w-7xl flex items-center justify-between fixed z-10 left-1/2 w-[95%] lg:w-[85%] -translate-x-1/2 bg-gray-800/95 py-4 px-10 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 ease-out ${isScrolled ? 'top-0' : 'top-5'}`}>
+            <nav className={`max-w-7xl flex items-center justify-between fixed z-10 left-1/2 lg:w-[85%] -translate-x-1/2 bg-gray-800/95 py-4 px-10 lg:rounded-full shadow-xl backdrop-blur-sm transition-all top-0 w-full duration-300 ease-out ${isScrolled ? 'lg:top-0' : 'lg:top-5'}`}>
                 <div className="navbar-logo">
                     <h1 className='text-2xl text-amber-600 font-extrabold'>Umair<span className="text-white">.Dev</span></h1>
                 </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
 
                 <div>
-                    <a href='https://www.linkedin.com/in/muhammad-umair-20a5462ab/' target='_blank' className="bg-amber-500/20 border border-amber-500 text-white px-4 py-2 rounded-full hover:bg-amber-600 transition duration-300">Get in Touch</a>
+                    <a href='https://www.linkedin.com/in/muhammad-umair-20a5462ab/' target='_blank' className="bg-amber-500/20 border border-amber-500 text-white lg:px-4 lg:py-2 px-4 py-1 rounded-full hover:bg-amber-600 transition duration-300">Get in Touch</a>
                 </div>
             </nav>
         </div>
