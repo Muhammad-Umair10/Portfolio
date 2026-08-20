@@ -27,10 +27,10 @@ const professional = [
 const Home = () => {
     return (
         // FIXED: Changed lg:w-[10%] to w-full and made it flex-col across all screen sizes so sections stack correctly
-        <div id="home" className="w-full flex flex-col mt-25 bg-gray-900 text-white px-4 md:px-10 lg:mt-30 lg:px-30 ">
+        <div id="home" className="w-full justify-center items-center flex flex-col mt-25 bg-gray-900 text-white px-4 md:px-10 lg:mt-30 lg:px-30 ">
             
             {/* FIXED: Changed h-screen to min-h-screen to prevent mobile text truncation, and optimized padding */}
-            <div className="flex flex-col lg:flex-row items-center gap-10 justify-center lg:justify-between lg:py-0 w-full text-white">
+            <div className="max-w-7xl flex flex-col lg:flex-row items-center gap-10 justify-center lg:justify-between lg:py-0 w-full text-white">
                 <div className="max-w-3xl"> {/* Added max-width to keep typography clean on huge monitors */}
                     <motion.h1
                         initial={{ opacity: 0, y: 40 }}
