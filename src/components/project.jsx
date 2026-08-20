@@ -52,7 +52,7 @@ const projectsData = [
 
 const Project = () => {
     return (
-        <section id="projects" className="my-20 text-white">
+        <section id="projects" className="max-w-7xl my-20 text-white">
             <div>
                 <motion.h2
                     initial={{ opacity: 0, y: 40 }}

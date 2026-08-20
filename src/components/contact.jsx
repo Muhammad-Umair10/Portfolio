@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full lg:py-0 bg-gray-900 text-white font-sans flex flex-col items-center justify-center">
+    <div id="contact" className="max-w-7xl w-full lg:mt-20 lg:py-0 bg-gray-900 text-white font-sans flex flex-col items-center justify-center">
 
       {/* Header */}
       <div className="mb-8 text-center">

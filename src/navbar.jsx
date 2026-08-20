@@ -18,7 +18,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div className="flex items-center justify-center text-white">
+        <div className="max-w-7xl flex items-center justify-center text-white">
             <nav className={`flex items-center justify-between fixed z-10 left-1/2 w-[95%] lg:w-[85%] -translate-x-1/2 bg-gray-800/95 py-4 px-10 rounded-full shadow-xl backdrop-blur-sm transition-all duration-300 ease-out ${isScrolled ? 'top-0' : 'top-5'}`}>
                 <div className="navbar-logo">
                     <h1 className='text-2xl text-amber-600 font-extrabold'>Umair<span className="text-white">.Dev</span></h1>

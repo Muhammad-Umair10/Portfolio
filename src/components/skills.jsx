@@ -61,7 +61,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center  text-white gap-10 mt-20">
+    <div className="max-w-7xl flex flex-col items-center justify-center text-white gap-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

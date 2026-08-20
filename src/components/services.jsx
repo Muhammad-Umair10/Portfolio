@@ -27,7 +27,7 @@ const skillsData = [
 
 const Services = () => {
   return (
-    <div id="services" className="flex flex-col gap-5 lg:gap-10 mt-20 lg:my-20 items-center justify-center text-white">
+    <div id="services" className="max-w-7xl flex flex-col gap-5 lg:gap-10 mt-20 items-center justify-center text-white">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
